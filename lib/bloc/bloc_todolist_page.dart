@@ -12,13 +12,10 @@ class BlocTodoListPage extends StatefulWidget {
 class _BlocTodoListPageState extends State<BlocTodoListPage> {
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(
-      providers: [BlocProvider<TodoBloc>(create: (BuildContext context) => TodoBloc())],
-      child: Scaffold(
-        appBar: AppBar(title: const Text('BLoC TodoList')),
-        body: Column(children: [_filterChoiceChipList(context), _todoListView()]),
-        floatingActionButton: _addTodoButton(context),
-      ),
+    return Scaffold(
+      appBar: AppBar(title: const Text('BLoC TodoList')),
+      body: Column(children: [_filterChoiceChipList(context), _todoListView()]),
+      floatingActionButton: _addTodoButton(context),
     );
   }
 

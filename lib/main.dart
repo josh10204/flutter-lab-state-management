@@ -4,7 +4,7 @@ import 'package:flutter_lab_state_management/riverpod/future_provider/future_pro
 import 'package:flutter_lab_state_management/riverpod/state_notifier/state_notifier_page.dart';
 import 'package:flutter_lab_state_management/riverpod/state_provider/state_provider_page.dart';
 
-import 'bloc/bloc_todolist_page.dart';
+import 'bloc/bloc_main.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
         child: ListView(
           padding: const EdgeInsets.all(15),
           children: [
-            _listItem(context: context, title: 'BloC', subTitle: 'TodoList', routePage: const BlocTodoListPage()),
+            _listItem(context: context, title: 'BloC', subTitle: 'TodoList', routePage: const BlocMain()),
             _listItem(context: context, title: 'StateProvider', subTitle: 'TodoList', routePage: const StateProviderPage()),
             _listItem(context: context, title: 'StateNotifier', subTitle: 'TodoList', routePage: const StateNotifierPage()),
             _listItem(context: context, title: 'FutureProvider', subTitle: 'TodoList', routePage: const FutureProviderPage()),
