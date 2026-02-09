@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
         child: ListView(
           padding: const EdgeInsets.all(15),
           children: [
-            _listItem(context: context, title: 'Bloc', subTitle: 'TodoList', routePage: const BlocTodoListPage()),
+            _listItem(context: context, title: 'BloC', subTitle: 'TodoList', routePage: const BlocTodoListPage()),
             _listItem(context: context, title: 'StateProvider', subTitle: 'TodoList', routePage: const StateProviderPage()),
             _listItem(context: context, title: 'StateNotifier', subTitle: 'TodoList', routePage: const StateNotifierPage()),
             _listItem(context: context, title: 'FutureProvider', subTitle: 'TodoList', routePage: const FutureProviderPage()),
